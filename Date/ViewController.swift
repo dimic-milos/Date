@@ -13,10 +13,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd HH:mm"
-        let someDateTime = formatter.date(from: "1983/10/29 22:31")
-        print(someDateTime!)
+        // 1
+        let date = DateHelper.getDateFrom(yyyyMMddHHmmss: "1983-10-29 22:31:00")
+        print(date)
+        
+        // 2.1
+        let dayName = DateHelper.getDayNameFrom(date: date)
+        print(dayName)
+        // 2.2
+        let dayNameInSpecificLocale = DateHelper.getDayNameFrom(date: date, inLocale: "sr")
+        print(dayNameInSpecificLocale)
+        
+        // 3.1
+        let formattedDateAsMonthDayAndHour = DateHelper.getString(inFormat: .monthDayAndHour, fromDate: date)
+        print(formattedDateAsMonthDayAndHour)
+        // 3.2
+        let formattedDateAsJustTime = DateHelper.getString(inFormat: .justTime, fromDate: date)
+        print(formattedDateAsJustTime)
     }
 
 

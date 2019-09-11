@@ -13,6 +13,7 @@
 		74E9BF7421EB4171009EA690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E9BF7321EB4171009EA690 /* Assets.xcassets */; };
 		74E9BF7721EB4171009EA690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E9BF7521EB4171009EA690 /* LaunchScreen.storyboard */; };
 		74E9BF8221EB4171009EA690 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9BF8121EB4171009EA690 /* DateTests.swift */; };
+		E90755712328CEF3004FC569 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90755702328CEF3004FC569 /* DateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		74E9BF7D21EB4171009EA690 /* DateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E9BF8121EB4171009EA690 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		74E9BF8321EB4171009EA690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90755702328CEF3004FC569 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		74E9BF6B21EB4171009EA690 /* Date */ = {
 			isa = PBXGroup;
 			children = (
+				E907556F2328CEF3004FC569 /* DateHelper */,
 				74E9BF6C21EB4171009EA690 /* AppDelegate.swift */,
 				74E9BF6E21EB4171009EA690 /* ViewController.swift */,
 				74E9BF7021EB4171009EA690 /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				74E9BF8321EB4171009EA690 /* Info.plist */,
 			);
 			path = DateTests;
+			sourceTree = "<group>";
+		};
+		E907556F2328CEF3004FC569 /* DateHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E90755702328CEF3004FC569 /* DateHelper.swift */,
+			);
+			path = DateHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90755712328CEF3004FC569 /* DateHelper.swift in Sources */,
 				74E9BF6F21EB4171009EA690 /* ViewController.swift in Sources */,
 				74E9BF6D21EB4171009EA690 /* AppDelegate.swift in Sources */,
 			);
