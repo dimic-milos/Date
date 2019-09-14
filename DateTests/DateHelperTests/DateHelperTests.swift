@@ -27,4 +27,13 @@ class DateHelperTests: XCTestCase {
         let properDateString = "1983-10-29 23:05:00"
         XCTAssertNotNil(DateHelper.getDateFrom(yyyyMMddHHmmss: properDateString))
     }
+    
+    func test_getStringInFormat_ReturnsExpectedResult() {
+        let expectedResult = "10-29 23"
+        let date = DateHelper.getDateFrom(yyyyMMddHHmmss: "1983-10-29 23:05:00")
+        let formattedDateAsMonthDayAndHour = DateHelper.getString(inFormat: .monthDayAndHour, fromDate: date)
+
+        XCTAssertEqual(expectedResult, formattedDateAsMonthDayAndHour)
+        
+    }
 }
