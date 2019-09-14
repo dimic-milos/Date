@@ -11,11 +11,15 @@ import XCTest
 
 class DateHelperTests: XCTestCase {
     
-        func test_getDayNameFrom_WhenDateIsSetToZeroTimeIntervalSince1970_ResultIsAsExpected() {
-            let expectedResult = "Thursday"
-            let date = Date(timeIntervalSince1970: 0)
-            XCTAssertEqual(expectedResult, DateHelper.getDayNameFrom(date: date))
-        }
-        
+    func test_getDayNameFrom_WhenDateIsSetToZeroTimeIntervalSince1970_ResultIsANotEqual() {
+        let expectedResult = "Thursday"
+        let date = Date(timeIntervalSince1970: 0)
+        XCTAssertNotEqual(expectedResult, DateHelper.getDayNameFrom(date: date))
+    }
     
+    func test_getDayNameFrom_WhenDateIsSetToZeroTimeIntervalSince1970_ResultIsAsExpected() {
+        let expectedResult = "Thursday"
+        let date = Date(timeIntervalSince1970: 0)
+        XCTAssertEqual(expectedResult, DateHelper.getDayNameFrom(date: date))
+    }
 }
