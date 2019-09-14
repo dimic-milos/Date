@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // 1
-        let date = DateHelper.getDateFrom(yyyyMMddHHmmss: "1983-10-29 22:31:00")
+        let date = DateHelper.getDateFrom(yyyyMMddHHmmss: "1983-10-29 23:05:00")
         print(date)
         
         // 2.1

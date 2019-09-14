@@ -22,4 +22,9 @@ class DateHelperTests: XCTestCase {
         let date = Date(timeIntervalSince1970: 0)
         XCTAssertEqual(expectedResult, DateHelper.getDayNameFrom(date: date))
     }
+    
+    func test_getDateFrom_WhenProperDateStringIsUsed_ResultIsAppropriateDateObject()  {
+        let properDateString = "1983-10-29 23:05:00"
+        XCTAssertNotNil(DateHelper.getDateFrom(yyyyMMddHHmmss: properDateString))
+    }
 }
