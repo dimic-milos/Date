@@ -1,9 +1,9 @@
 //
 //  DateHelper.swift
-//  Weather2Umbrella
+//  Date
 //
-//  Created by Dimic Milos on 7/17/19.
-//  Copyright © 2019 Weather2Umbrella LTD. All rights reserved.
+//  Created by Milos Dimic on 1/13/19.
+//  Copyright © 2019 Milos Dimic. All rights reserved.
 //
 
 import os

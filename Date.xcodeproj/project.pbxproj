@@ -14,6 +14,7 @@
 		74E9BF7721EB4171009EA690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E9BF7521EB4171009EA690 /* LaunchScreen.storyboard */; };
 		74E9BF8221EB4171009EA690 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E9BF8121EB4171009EA690 /* DateTests.swift */; };
 		E90755712328CEF3004FC569 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90755702328CEF3004FC569 /* DateHelper.swift */; };
+		E9536F6E232CD8580099A575 /* DateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9536F6D232CD8580099A575 /* DateHelperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		74E9BF8121EB4171009EA690 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		74E9BF8321EB4171009EA690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90755702328CEF3004FC569 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		E9536F6D232CD8580099A575 /* DateHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		74E9BF8021EB4171009EA690 /* DateTests */ = {
 			isa = PBXGroup;
 			children = (
+				E9536F6C232CD8410099A575 /* DateHelperTests */,
 				74E9BF8121EB4171009EA690 /* DateTests.swift */,
 				74E9BF8321EB4171009EA690 /* Info.plist */,
 			);
@@ -105,6 +108,14 @@
 				E90755702328CEF3004FC569 /* DateHelper.swift */,
 			);
 			path = DateHelper;
+			sourceTree = "<group>";
+		};
+		E9536F6C232CD8410099A575 /* DateHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9536F6D232CD8580099A575 /* DateHelperTests.swift */,
+			);
+			path = DateHelperTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E9BF8221EB4171009EA690 /* DateTests.swift in Sources */,
+				E9536F6E232CD8580099A575 /* DateHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
