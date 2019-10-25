@@ -41,4 +41,11 @@ struct DateHelper {
         let formattedDate = dateFormatter.string(from: date)
         return formattedDate
     }
+    
+    static func getNumberOfHoursBetween(earlier: Date, latter: Date)  -> Int? {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.hour], from: earlier, to: latter)
+        let difference = components.hour
+        return difference
+    }
 }

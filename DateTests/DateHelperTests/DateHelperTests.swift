@@ -33,6 +33,17 @@ class DateHelperTests: XCTestCase {
         let date = DateHelper.getDateFrom(yyyyMMddHHmmss: "1983-10-29 23:05:00")
         let formattedDateAsMonthDayAndHour = DateHelper.getString(inFormat: .monthDayAndHour, fromDate: date)
         XCTAssertEqual(expectedResult, formattedDateAsMonthDayAndHour)
-        
+    }
+    
+    func test_getTimeInHoursBetween_WhenDateComparedIsTheSame_ReturnsExpectedResult() {
+        let expectedResult = 0
+        let date = Date()
+        XCTAssertEqual(DateHelper.getNumberOfHoursBetween(earlier: date, latter: date), expectedResult)
+    }
+    
+    func test_getNumberOfHoursBetween_WhenFirstDateIs3600SecondsInThePast_ReturnsExpectedResult() {
+        let expectedResult = 1
+        let dateFromThePast = Date.init(timeIntervalSinceNow: -3600)
+        XCTAssertEqual(DateHelper.getNumberOfHoursBetween(earlier: dateFromThePast, latter: Date()), expectedResult)
     }
 }
