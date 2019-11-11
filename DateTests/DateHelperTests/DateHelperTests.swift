@@ -43,7 +43,7 @@ class DateHelperTests: XCTestCase {
     
     func test_getNumberOfHoursBetween_WhenFirstDateIs3600SecondsInThePast_ReturnsExpectedResult() {
         let expectedResult = 1
-        let dateFromThePast = Date.init(timeIntervalSinceNow: -3600)
+        let dateFromThePast = Date(timeIntervalSinceNow: -3600)
         XCTAssertEqual(DateHelper.getNumberOfHoursBetween(earlier: dateFromThePast, latter: Date()), expectedResult)
     }
 }

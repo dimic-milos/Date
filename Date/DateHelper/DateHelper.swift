@@ -48,4 +48,19 @@ struct DateHelper {
         let difference = components.hour
         return difference
     }
+    
+    static func getLocalizedDescription(fromDate date: Date, localeIdentifier: String, dateStyle: DateFormatter.Style? = nil, timeStyle: DateFormatter.Style? = nil) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: localeIdentifier)
+        
+        if let dateStyle = dateStyle {
+            dateFormatter.dateStyle = dateStyle
+        }
+        
+        if let timeStyle = timeStyle {
+            dateFormatter.timeStyle = timeStyle
+        }
+        
+        return dateFormatter.string(from: date)
+    }
 }
